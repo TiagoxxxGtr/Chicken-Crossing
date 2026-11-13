@@ -42,7 +42,7 @@ function actx(){if(!ac){try{ac=new(window.AudioContext||window.webkitAudioContex
    Rewinds to 0:00 on Game Over so every new run starts the song from the beginning. */
 const MUSIC_VOL=.45;
 let unlocked=false,musicBusy=false,musicRetryAt=0;
-const music=(()=>{try{const a=new Audio('audio/music.ogg');a.loop=true;a.preload='auto';a.volume=MUSIC_VOL;return a}catch(e){return null}})();
+const music=(()=>{try{const a=new Audio('music.ogg');a.loop=true;a.preload='auto';a.volume=MUSIC_VOL;return a}catch(e){return null}})();
 function musicSync(){
  if(ac){ // also freeze/unfreeze the SFX audio context
   if(silent()){if(ac.state==='running')ac.suspend().catch(()=>{})}
