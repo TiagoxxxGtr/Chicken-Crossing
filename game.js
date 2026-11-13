@@ -2,7 +2,7 @@
 'use strict';
 /* ================= YouTube Playables SDK (safe if missing) ================= */
 const YT=window.ytgame, yt=f=>{try{f()}catch(e){}};
-const L={tap:'TAP TO HOP',hint:'Swipe sideways · Escape the eagle!',over:'GAME OVER',best:'Best',rec:'NEW RECORD!',again:'Tap to play again',died:'YOU DIED',score:'Score',left:'Continues left',watch:'WATCH AD TO CONTINUE',restart:'RESTART (SCORE 0)',adTitle:'PLAYABLES AD',adEnds:'Ad ends in',adReward:'Reward: continue with your score'};
+const L={tap:'TAP TO HOP',hint:'Swipe sideways · Escape the eagle!',over:'GAME OVER',best:'Best',rec:'NEW RECORD!',again:'Tap to play again',died:'YOU LOST',score:'Score',left:'Continues left',watch:'WATCH AD TO CONTINUE',restart:'RESTART (SCORE 0)',adTitle:'PLAYABLES AD',adEnds:'Ad ends in',adReward:'Reward: continue with your score'};
 
 const cv=document.getElementById('c'),g=cv.getContext('2d');
 let W,H,T,D,HH,baseY,bz,zbDz;const K=0.028;
